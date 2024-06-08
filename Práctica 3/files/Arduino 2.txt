@@ -1,0 +1,20 @@
+//Contador de pulsos
+int cuenta = 0;
+void contar_pulsos(){
+
+  if(digitalRead(8)==HIGH)
+  {
+    while(digitalRead(8)==HIGH);
+    cuenta++;
+    Serial.println(cuenta);
+  }
+  
+}
+void setup() {
+  Serial.begin(9600);
+  pinMode(8,INPUT);
+}
+
+void loop() {
+  contar_pulsos();
+}
