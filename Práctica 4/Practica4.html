@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 1</title>
+        <title>Práctica 4</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
+                        <h1 class="fw-bolder mb-1">Protocolo de comunicación Asíncrono</h1>
 
                         <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
@@ -78,6 +78,7 @@
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
 
                     </header>
                 </div>
@@ -89,11 +90,11 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4"></p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
+                        <p class="fs-6 mb-4">En esta práctica el objetivo general es conocer, identificar y comprobar el funcionamiento al desarrollar un protocolo de comunicación asíncrono.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
@@ -101,29 +102,38 @@
                         <p class="fs-6 mb-4"> -Protoboard
                         <p class="fs-6 mb-4"> -Botones
                         <p class="fs-6 mb-4"> -Leds
+                            <p class="fs-6 mb-4"> -Potenciómetro
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).}
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
+                        <p class="fs-6 mb-4">Utilizando un Arduino, diseñar un sistema que permita convertir el valor analógico de un potenciómetro en un arreglo de variables que representen el numero en binario de 8 bits, y los deposite en un arreglo [ ], Finalmente elaborar un código de programación que permita enviar los bits del arreglo en orden y en serie siguiendo las siguientes características:</p>
+                            <p class="fs-6 mb-4"> -Iniciar el envió de los datos siempre con una señal HIGH (En total se enviarán 9 datos, el primer bit en HIGH y posteriormente los 8 bits de información).</p>
+                            <p class="fs-6 mb-4"> -Enviar los datos con una duración del pulso predeterminada, ejemplo 1000 ms</p>  
+                            <p class="fs-6 mb-4"> -Enviar siempre la misma cantidad de bits.</p>
+                            <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita adquirir el valor en bits de la señal de comunicación del Arduino anterior, la procese y la convierte en un dato decimal que finalmente enviara al monitor serial.</p>
+                            
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello, se realizó el siguiente circuito en donde con ayuda de un potenciómetro se logró ver dos resultados distintos en el monitor serial de cada uno de los arduinos.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P3.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Al correr la simulación, en el primer monitor observamos el valor analógico de un potenciómetro en un arreglo de variables que representaron el número en binario de 8 bits.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Arduino1.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">En el segundo arduino, observamos en el monitor serial que se obtuvo la decodificación de el valor en binario con respecto al movimiento del potenciómetro. Obteniendo así, un valor entero.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Arduino 2.jpg" alt="..." /></figure>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">A continuación, se presentan dos videos en los cuales se corre la simulación y se aprecia cada uno de los monitores seriales y sus respectivos resultados, con respecto al movimiento del potenciómetro.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="video/Arduino 1 funcionamiento.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/Arduino 2 funcionamiento.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se demostró con éxito la capacidad de los microcontroladores Arduino para generar y contar pulsos de manera precisa y eficiente. La implementación de la función de generación de pulsos permitió controlar la cantidad y frecuencia de los mismos, mientras que la función de conteo validó la recepción y el registro correcto de estos pulsos. La conexión de ambos Arduinos y las pruebas realizadas a diversas frecuencias evidenciaron la capacidad del sistema para manejar diferentes velocidades de pulso, confirmando la robustez y precisión del diseño.</p>
-                        <p class="fs-6 mb-4">Adicionalmente, el uso de Tinkercad como herramienta de simulación facilitó el desarrollo y prueba del sistema sin necesidad de hardware físico, permitiendo visualizar y ajustar el comportamiento de los pulsos en un entorno virtual. Esta práctica resalta la versatilidad de los Arduinos en aplicaciones de sincronización y comunicación, y proporciona una base sólida para desarrollos futuros en sistemas de control y monitoreo, aprovechando tanto simulaciones como implementaciones físicas.</p>
+                        <p class="fs-6 mb-4">Este ejercicio no solo reforzó conceptos fundamentales de electrónica digital y programación, sino que también permitió aplicar conocimientos sobre la comunicación entre dispositivos y la manipulación de datos. Al implementar y probar este sistema, se comprendió mejor cómo interactúan los componentes analógicos y digitales en un entorno de microcontroladores, así como la importancia de la precisión en la conversión de valores y la transmisión de datos entre múltiples dispositivos.</p>
                         
 
                         <p id="referencias">
@@ -134,8 +144,8 @@
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino 1.txt">Arduino 1</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino 2.txt">Arduino 2</a> </p>
+                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino1P3.txt">Arduino 1</a> </p>
+                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino2P3.txt">Arduino 2</a> </p>
                         
 
                 </div>
@@ -143,26 +153,3 @@
 
             
         </main>
-
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
