@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
+                        <h1 class="fw-bolder mb-1">Ejercicio: Aplicación de red local</h1>
 
                         <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
@@ -69,13 +69,13 @@
 
                         <!-- ETIQUETA DE Marco (Hacer una por cada alumno)-->
                         <div class="ms-2">
-                            <div class="fw-bold">Marco Alejandro Solorzano</div>
+                            <div class="fw-bold">Marco Alejandro Solorzano Morales</div>
                             <div class="text-muted">Ingeniería Mecatrónica</div>
                         </div>
                         <!--Aqui termina etiqueta de alumno-->
 
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo, 2024</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Junio, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
 
@@ -89,42 +89,47 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">Con ayuda de cisco packet tracer se realizó un ejercicio aplicable a la vida cotidiana en donde se llevó a cabo un análisis de funcionamiento y de los elementos de una red local.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
-                        
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
+                        <p class="fs-6 mb-4">En esta práctica se aplican los elementos que se utilizan para configurar una red local y el acceso a recursos de un equipo de red. En la presente práctica, se abordará la simulación de una red de computadoras utilizando el programa Packet Tracer de Cisco. El objetivo principal es diseñar y configurar una red que permita la comunicación eficiente entre las computadoras de una escuela, asignando direcciones IP dentro del rango de la red 192.168.7.0. Además, se utilizará la función ping desde la ventana de comandos para verificar la conectividad entre los diferentes dispositivos.</p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).}
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
+                        <p class="fs-6 mb-4">Utilizando el programa de Packet Tracer de Cisco, simula una red de aplicación, asignando a las computadoras las IP pertenecientes a la red 192.168.7.0., utilizando la ventana de comandos utiliza la función ping para verificar la comunicación entre cada una de las computadoras.</p>
+                        <p class="fs-6 mb-4">En una escuela se necesitan desarrollar una red de computadoras, se cuenta con 5 salas de cómputo con 10 computadoras cada uno, y una sala de administración con 6 computadoras para el personal administrativo.</p>
+                        <p class="fs-6 mb-4">Los salones de cómputo se encuentran a más 80 metros de la oficina administrativa. La oficina administrativa posee un router para la conexión a internet de todos los equipos de la escuela. Utiliza repetidores y switches necesarios para desarrollar la red.</p>
+                        <p class="fs-6 mb-4">Elabora un video donde se compruebe el funcionamiento de 5 dispositivos comunicados entre sí.</p>
+                        <p class="fs-6 mb-4">Elabora un diagrama o mapa representativo de los salones con sus computadoras, así como su ubicación física.</p>
+                        <p class="fs-6 mb-4">Elabora una tabla comparativa con la distribución física e IP de cada equipo (computadora, repetidor, switch y router).</p>
+                        <p class="fs-6 mb-4">Contesta las siguientes preguntas:  ¿Cuántos metros de cable de red se utilizarán? Sin tomar en cuenta el costo de las computadoras, ¿Cuál es el costo de la infraestructura de red (cotiza el metro de cable y los equipos a utilizar)?</p>
+                           
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Se realizó una simulación en cisco packet tracer, en donde se realizó el acomodo de las computadoras con respecto al enunciado. Acomodandolas de la siguiente forma.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Simulación.jpeg" alt="..." /></figure>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">A continuación, se presenta el diagrama realizado en donde se observa la distribución de cada una de las áreas de la escuela.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Salón de computo 1.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Así mismo, se elaboró una tabla comparativa con la distrubució y el IP de cada elemento.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla 1.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla 2.jpg" alt="..." /></figure>
+                        
+                        <p id="Videos">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Videos -</h2>
+                            <p class="fs-6 mb-4">A continuación, se presenta el diagrama realizado en donde se observa la distribución de cada una de las áreas de la escuela.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se demostró con éxito la capacidad de los microcontroladores Arduino para generar y contar pulsos de manera precisa y eficiente. La implementación de la función de generación de pulsos permitió controlar la cantidad y frecuencia de los mismos, mientras que la función de conteo validó la recepción y el registro correcto de estos pulsos. La conexión de ambos Arduinos y las pruebas realizadas a diversas frecuencias evidenciaron la capacidad del sistema para manejar diferentes velocidades de pulso, confirmando la robustez y precisión del diseño.</p>
-                        <p class="fs-6 mb-4">Adicionalmente, el uso de Tinkercad como herramienta de simulación facilitó el desarrollo y prueba del sistema sin necesidad de hardware físico, permitiendo visualizar y ajustar el comportamiento de los pulsos en un entorno virtual. Esta práctica resalta la versatilidad de los Arduinos en aplicaciones de sincronización y comunicación, y proporciona una base sólida para desarrollos futuros en sistemas de control y monitoreo, aprovechando tanto simulaciones como implementaciones físicas.</p>
-                        
+                        <p class="fs-6 mb-4">Esta práctica ha sido una experiencia valiosa para comprender cómo se diseñan y configuran las redes de computadoras en un entorno simulado utilizando Packet Tracer de Cisco. A través de la asignación de direcciones IP, la configuración de switches y repetidores, y la verificación de la conectividad mediante la función ping, hemos podido visualizar el funcionamiento de una red en un contexto escolar.</p>
+                        <p class="fs-6 mb-4">La simulación nos permitió enfrentar desafíos reales, como la distribución física de los dispositivos, la gestión de distancias mayores a 80 metros y la integración de un router central para la conexión a internet. Estas actividades reflejan situaciones que se presentan en la vida real, proporcionando una comprensión práctica y aplicada de cómo las redes deben ser diseñadas y mantenidas para asegurar una comunicación eficiente y confiable.</p>
+                        <p class="fs-6 mb-4">Además, la elaboración de un video demostrativo, un diagrama representativo y una tabla comparativa de la distribución física e IP de los dispositivos, ha reforzado la importancia de la documentación y la presentación clara de la infraestructura de red. Estas habilidades son esenciales para cualquier profesional que trabaje en el campo de las tecnologías de la información y las comunicaciones.</p>
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
@@ -133,36 +138,37 @@
                         <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
                         
                         <p id="descargables">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino 1.txt">Arduino 1</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino 2.txt">Arduino 2</a> </p>
-                        
-
-                </div>
-            </section>
-
-            
-        </main>
-
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                            <p class="fs-6 mb-4">Para este ejercicio, no hay descargables.</p>
+                            
+                            
+    
+                    </div>
+                </section>
+    
+                
+            </main>
+    
+            <!-- Footer-->
+            <footer class="bg-dark py-4 mt-auto">
+                <div class="container px-5">
+                    <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                        <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                        <div class="col-auto">
+                            <a class="link-light small" href="#!">Privacy</a>
+                            <span class="text-white mx-1">&middot;</span>
+                            <a class="link-light small" href="#!">Terms</a>
+                            <span class="text-white mx-1">&middot;</span>
+                            <a class="link-light small" href="#!">Contact</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+            </footer>
+    
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+        </body>
+    </html>
+    
