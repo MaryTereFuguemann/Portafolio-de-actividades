@@ -51,7 +51,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 1 Wifi ESP8266 Entradas y Salidas Digitales | </h1>
 
                         <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
@@ -89,41 +89,46 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">..</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
+                        <p class="fs-6 mb-4">..</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
+                        <p class="fs-6 mb-4"> - Node MCU ESP8266
+                        <p class="fs-6 mb-4"> -	LED, resistencia de 220 Ohms
+                        <p class="fs-6 mb-4"> -	4 Botones y 4 resistencias de 1Khom
+                        <p class="fs-6 mb-4"> -	Protoboard y cables
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).}
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
+                        <p class="fs-6 mb-4">Utilizando la información e instrucciones de la presentación, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias: http://arduino.esp8266.com/stable/package_esp8266com_index.json </p>
+                        <p class="fs-6 mb-4">Revisar el pinout y los GPIO disponibles para el uso del NodeMCU: https://randomnerdtutorials.com/esp8266-pinout-reference-gpios/ </p>
+                        <p class="fs-6 mb-4">Desarrollar un programa de encendido de un LED mediante programación.</p>
+                        <p class="fs-6 mb-4">Desarrollar un programa de encendido y apagado de un LED mediante retardos.</p>
+                        <p class="fs-6 mb-4">Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.</p>
+                        <p class="fs-6 mb-4">Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.</p>
+                        <p class="fs-6 mb-4">Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.</p>
+
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
+                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Wokwi. Para ello se coloracon los materiales correspondientes y se realizó el programa para aplicarse en el ESP8266. Finalmente, se conectó el resto de los materiales para observar su comportamiento.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">A continuación, se presenta un video.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="adjuntar video" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se demostró con éxito la capacidad de los microcontroladores Arduino para generar y contar pulsos de manera precisa y eficiente. La implementación de la función de generación de pulsos permitió controlar la cantidad y frecuencia de los mismos, mientras que la función de conteo validó la recepción y el registro correcto de estos pulsos. La conexión de ambos Arduinos y las pruebas realizadas a diversas frecuencias evidenciaron la capacidad del sistema para manejar diferentes velocidades de pulso, confirmando la robustez y precisión del diseño.</p>
-                        <p class="fs-6 mb-4">Adicionalmente, el uso de Tinkercad como herramienta de simulación facilitó el desarrollo y prueba del sistema sin necesidad de hardware físico, permitiendo visualizar y ajustar el comportamiento de los pulsos en un entorno virtual. Esta práctica resalta la versatilidad de los Arduinos en aplicaciones de sincronización y comunicación, y proporciona una base sólida para desarrollos futuros en sistemas de control y monitoreo, aprovechando tanto simulaciones como implementaciones físicas.</p>
+                        <p class="fs-6 mb-4">..</p>
+                        <p class="fs-6 mb-4">...</p>
                         
 
                         <p id="referencias">
