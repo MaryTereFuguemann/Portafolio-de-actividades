@@ -52,9 +52,8 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
-
-                        <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
+                        <h1 class="fw-bolder mb-1">Actividad | Introducción a redes de computadora</h1>
+                      
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
                             <div class="ms-2">
                                 <div class="fw-bold">Mary Tere Füguemann Sardá</div>
@@ -90,36 +89,50 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">En este reporte se exploran las redes de computadoras y dos modelos fundamentales que las sustentan: el modelo OSI y el modelo TCP/IP. El modelo OSI, con sus siete capas, ofrece un marco teórico para entender las funciones específicas de cada nivel de comunicación en una red. En contraste, el modelo TCP/IP, más práctico y con cuatro capas, es la base de la infraestructura de internet. Se analizarán las características y funciones de cada capa de ambos modelos, resaltando sus similitudes, diferencias y su importancia en la comunicación digital.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
-                        
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
+                        <p class="fs-6 mb-4">En la era de la información, las redes de computadoras han revolucionado la manera en que nos comunicamos, trabajamos y compartimos información. Estas redes, que conectan múltiples dispositivos a través de medios físicos y virtuales, forman la columna vertebral de la infraestructura digital global. La comprensión de cómo funcionan estas redes y los modelos que las sustentan es esencial para cualquier profesional en el campo de la informática y las telecomunicaciones.
+                            Dos de los modelos más fundamentales para el entendimiento de las redes de computadoras son el modelo OSI (Open Systems Interconnection) y el modelo TCP/IP (Transmission Control Protocol/Internet Protocol).
+                            El modelo OSI, desarrollado por la Organización Internacional de Normalización (ISO), es un marco teórico que divide la comunicación de redes en siete capas distintas, cada una con funciones específicas y bien definidas. Estas capas van desde el nivel físico, que trata con los medios de transmisión y la señalización, hasta la capa de aplicación, que se encarga de la interacción directa con los usuarios finales y las aplicaciones.
+                            Por otro lado, el modelo TCP/IP es un conjunto de protocolos utilizados para la interconexión de dispositivos en internet y en redes privadas. A diferencia del modelo OSI, el TCP/IP consta de cuatro capas, que agrupan y simplifican las funcionalidades del modelo OSI para su implementación práctica. Este modelo ha sido crucial en el desarrollo y expansión de internet, permitiendo la comunicación y transferencia de datos de manera eficiente y confiable.
+                            En este reporte, exploraremos en detalle las características y funciones de cada capa de ambos modelos, destacando sus similitudes, diferencias y cómo se complementan para facilitar la comunicación en redes de computadoras. A través de esta exploración, se proporcionará una comprensión integral de los fundamentos de las redes de computadoras y los protocolos que las gobiernan.
+                            </p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).}
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Basado en la lectura de introducción del libro Redes de Computadora, capitulo 1 : paginas 35-46, realiza lo siguiente:</p>
+                        <p class="fs-6 mb-4">1. En su página web realiza una explicación del modelo OSI.</p>
+                        <p class="fs-6 mb-4">2. En su página web realiza una explicación del modeloTCP/IP.</p>
+                        <p class="fs-6 mb-4">3. En su página web una tabla comparativa entre ambos modelos.</p>
+                        <p class="fs-6 mb-4">4. En su página web explica cada una de las capas en el modelo OSI Y TCP/IP así como sus diferencias utilizando un ejemplo de aplicación.</p>
+                            
+                        <p id="Resultados">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Resultados</h1>
+                            <p class="fs-6 mb-4">Explicación del modelo OSI.</p>
+                            <p class="fs-6 mb-4">El modelo OSI es un modelo de referencia desarrollado por la ISO que consta de siete capas y se basa en la estandarización internacional de protocolos para la interconexión de sistemas abiertos. Cada capa tiene una función bien definida y se creó para proporcionar un nivel diferente de abstracción. Aunque los protocolos asociados con el modelo OSI ya no se utilizan ampliamente, el modelo en sí sigue siendo válido y es importante para comprender las redes basadas en capas.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/modeloosi.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Explicación del modeloTCP/IP.</p>
+                            <p class="fs-6 mb-4">El Modelo de referencia TCP/IP se define por sus dos protocolos primarios y se basa en una red de conmutación de paquetes sin conexión que opera a través de distintas redes. La capa más baja en este modelo es la capa de enlace, que describe qué enlaces se deben llevar a cabo para cumplir con las necesidades de la interred sin conexión. A diferencia del modelo OSI, el TCP/IP no distingue entre la capa física y la de enlace de datos, lo cual puede ser considerado una limitación. Además, el modelo TCP/IP tiene cuatro capas, en contraste con las siete capas del modelo OSI. Aunque ambos modelos tienen capas de red, transporte y aplicación, las demás capas son diferentes</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/modelotcp.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Realización de una tabla comparativa de ambos modelos:</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Tabla comparativa.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Explicación de cada una de las capas en el modelo OSI y TCP/IP así como sus diferencias y ejemplos de aplicación.</p>
+                            <p class="fs-6 mb-4">Las capas del modelo OSI son:</p>
+                            <p class="fs-6 mb-4">1.	Capa física: Se encarga de la transmisión de bits puros a través de un canal de transmisión.</p>
+                            <p class="fs-6 mb-4">2.	Capa de enlace de datos: Trabaja con redes de punto a punto y de difusión, asegurando la integridad de la comunicación.</p>
+                            <p class="fs-6 mb-4">3.	Capa de red: Se encarga del enrutamiento de datos a través de la red.</p>
+                            <p class="fs-6 mb-4">4.	Capa de transporte: Proporciona un servicio de transporte independiente de la red, de extremo a extremo.</p>
+                            <p class="fs-6 mb-4">5.	Capa de sesión: Establece, mantiene y finaliza las conexiones entre aplicaciones.</p>
+                            <p class="fs-6 mb-4">6.	Capa de presentación: Se encarga de la representación de datos para la aplicación.</p>
+                            <p class="fs-6 mb-4">7.	Capa de aplicación: Contiene programas que utilizan la red, como navegadores web y protocolos como HTTP y DNS.</p>
+                            <p class="fs-6 mb-4">El modelo TCP/IP consta de cuatro capas, que son:</p>
+                            <p class="fs-6 mb-4">1.	Capa de interred: Define un formato de paquete y protocolos como IP e ICMP para entregar los paquetes a su destino y manejar la congestión en la red.</p>
+                            <p class="fs-6 mb-4">2.	Capa de transporte: Permite la comunicación entre entidades pares en los nodos de origen y destino a través de protocolos como TCP, que garantiza la entrega sin errores y control de flujo.</p>
+                            <p class="fs-6 mb-4">3.	Capa de enlace: Describe los enlaces necesarios para cumplir con las necesidades de la interred sin conexión, como líneas seriales y Ethernet clásica.</p>
+                            <p class="fs-6 mb-4">4.	Capa de aplicación: Contiene programas y protocolos utilizados por las aplicaciones, como HTTP, SMTP, DNS, entre otros.</p>
 
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
-                        <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
-                        </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
@@ -129,14 +142,15 @@
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
-                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
-                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        <p class="fs-6 mb-4">Tenenbaum, Wetherall. Quinta edición. Redes de computadora.</p>
+                        
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino 1.txt">Arduino 1</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino 2.txt">Arduino 2</a> </p>
+                        <p class="fs-6 mb-4">Descargar libro: <a href="files/1_INTRODUCCION_Redes de computadora 5ta edición.pdf">Libro</a> </p>
+                        <p class="fs-6 mb-4">Descargar presentación: <a href="files/1_Redes de Computadora_Intro y OSI.pdf">Presentación</a> </p>
+                        
+                        
                         
 
                 </div>
