@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+
+<body>
+  <h1 ">Estilo 1</h1>
+  <h2 ">Estilo 2</h2>
+  <h3 ">Estilo 3</h3>
+  <h4 ">Estilo 4</h4>
+  <h5 ">Estilo 5</h5>
+  <h6 ">Estilo 6</h6>
+  <h7 ">Estilo 7</h7>
+  <h8 ">Estilo 8</h8>
+  <h9 ">Estilo 9</h9>
+  <h10 ">Estilo 10</h10>
+  <h11 ">Estilo 11</h11>
+  <h12 ">Estilo 12</h12>
+  <h13 ">Estilo 13</h13>
+  <h14 ">Estilo 14</h14>
+  <h15 ">Estilo 15</h15>
+  <h16 ">Estilo 16</h16>
+  <h17 ">Estilo 17</h17>
+  <h18 ">Estilo 18</h18>
+  <h19 ">Estilo 19</h19>
+  <h20 ">Estilo 20</h20>
+  <h21 ">Estilo 21</h21>
+  <h22 ">Estilo 22</h22>
+  <h23 ">Estilo 23</h23>
+  <h24 ">Estilo 24</h24>
+  <h25 ">Estilo 25</h25>
+  <h26 ">Estilo 26</h26>
+  <h27 ">Estilo 27</h27>
+  <h28 ">Estilo 28</h28>
+  <h29 ">Estilo 29</h29>
+  <h30 ">Estilo 30</h30>
+  
+  
+</body>
+
+</html>
