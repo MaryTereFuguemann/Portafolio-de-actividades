@@ -128,14 +128,13 @@
                             <p class="fs-6 mb-4">3. La diferencia clave entre los archivos HTML y PHP radica en su funcionalidad y cómo se procesan en el servidor web. HTML es un lenguaje de marcado estático utilizado para definir la estructura y el contenido básico de las páginas web mediante etiquetas como <html>, <head>, <body>, etc. En contraste, PHP es un lenguaje de programación dinámico utilizado para el desarrollo web del lado del servidor, permitiendo la inclusión de código PHP dentro de documentos HTML para generar contenido dinámico, interactuar con bases de datos, procesar formularios y realizar otras tareas avanzadas. Mientras HTML define la presentación estática de una página, PHP añade funcionalidades que permiten a las páginas web responder de manera dinámica a la interacción del usuario y a las condiciones del servidor.</p>
                             <p class="fs-6 mb-4">4. La etiqueta `<?php ?>` se utiliza para indicar al servidor que el código contenido dentro de estas etiquetas es código PHP que debe ser interpretado y ejecutado. Todo el código PHP debe estar encapsulado dentro de estas etiquetas.</p>
                             <p class="fs-6 mb-4">5. Para ejecutar archivos PHP en un servidor web, se necesitan algunos requisitos básicos: un servidor web como Apache o Nginx, PHP instalado en el servidor y acceso al servidor para cargar archivos usando métodos como FTP, SFTP o SSH. Los pasos implican primero crear un archivo PHP con el código deseado, luego subir este archivo al servidor web, típicamente al directorio public_html o equivalente. Es crucial asegurarse de que el servidor web esté configurado correctamente para procesar archivos PHP. Una vez cargado, se puede acceder al archivo PHP a través de un navegador web para ver cómo se ejecuta y muestra el contenido dinámico generado por el código PHP.</p>
-                            <p class="fs-6 mb-4">6. <!-- <?php
+                            <p class="fs-6 mb-4">6. <?php
                                 if(isset($_GET['DATO'])){
                                   $DATO_var=$_GET['DATO'];
                                 $TEXTO=$DATO_var."\r\n";
                                 file_put_contents("datos.txt", $TEXTO);
                                 } 
                                 ?>
-                                
                                 <!DOCTYPE html>
                                 <html>
                                   <head>
@@ -147,8 +146,10 @@
                                     echo "<p>Hola</p>"
                                 ?>
                                   </body>
-                                </html></p>-->
-                            <p class="fs-6 mb-4"></p>
+                                </html></p>
+                            <p class="fs-6 mb-4">7. </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/inv.jpg" alt="..." /></figure>
+                            
                             <p class="fs-6 mb-4"></p>
                             <p class="fs-6 mb-4"></p>
                             <p class="fs-6 mb-4"></p>
