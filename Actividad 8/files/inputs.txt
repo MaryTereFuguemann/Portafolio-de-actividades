@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tipos de Inputs</title>
+</head>
+
+<body>
+    <form>
+        <label>Botón:
+            <input type="button" value="Click">
+        </label>
+        <br>
+        <label>Casilla:
+            <input type="checkbox">
+        </label>
+        <br>
+        <label>Color:
+            <input type="color">
+        </label>
+        <br>
+        <label>Fecha:
+            <input type="date">
+        </label>
+        <br>
+        <label>Fecha y hora local:
+            <input type="datetime-local">
+        </label>
+        <br>
+        <label>Email:
+            <input type="email">
+        </label>
+        <br>
+        <label> Archivo:
+            <input type="file">
+        </label>
+        <br>
+        <label>Hidden:
+            <input type="hidden" value="hidden_value">
+        </label>
+        <br>
+        <label>Imagen:
+            <input type="image" src="https://via.placeholder.com/150" alt="Submit">
+        </label>
+        <br>
+
+        <label>Mes:
+            <input type="month">
+        </label>
+        <br>
+
+        <label>Número:
+            <input type="number">
+        </label>
+        <br>
+
+        <label>Contraseña:
+            <input type="password">
+        </label>
+        <br>
+
+        <label>Radio:
+            <input type="radio" name="radio_group">
+        </label>
+        <br>
+
+        <label>Rango:
+            <input type="range">
+        </label>
+        <br>
+
+        <label>Reset:
+            <input type="reset">
+        </label>
+        <br>
+
+        <label>Buscar:
+            <input type="search">
+        </label>
+        <br>
+
+        <label>Enviar:
+            <input type="submit">
+        </label>
+        <br>
+
+        <label>Teléfono:
+            <input type="tel">
+        </label>
+        <br>
+
+        <label>Texto:
+            <input type="text">
+        </label>
+        <br>
+
+        <label>Tiempo:
+            <input type="time">
+        </label>
+        <br>
+
+        <label>URL:
+            <input type="url">
+        </label>
+        <br>
+
+        <label>Semana:
+            <input type="week">
+        </label>
+    </form>
+</body>
+
+</html>
