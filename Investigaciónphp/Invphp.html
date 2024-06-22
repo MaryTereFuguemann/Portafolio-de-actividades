@@ -121,25 +121,33 @@
                         <p class="fs-6 mb-4">21. Finamente, concluye cuales serian las ventajas de integrar PHP en una pagina web.</p>
                                           
 
-                        <p id="Resultados">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Resultados</h1>
-                            <p class="fs-6 mb-4">La etiqueta `<?php ?>` se utiliza para indicar al servidor que el código contenido dentro de estas etiquetas es código PHP que debe ser interpretado y ejecutado. Todo el código PHP debe estar encapsulado dentro de estas etiquetas.</p>
-                            <p class="fs-6 mb-4">1. Requisitos:
-                                - Un servidor web (como Apache, Nginx, etc.). 
-                                - PHP instalado en el servidor. 
-                                - Acceso al servidor para cargar archivos (mediante FTP, SFTP, SSH, etc.). 
-                               
-                             2. Pasos: 
-                                1. Crear un archivo PHP con el código deseado. 
-                                2. Subir el archivo PHP al servidor web, generalmente en el directorio `public_html` o equivalente. 
-                                3. Asegurarse de que el servidor web esté configurado para procesar archivos PHP. 
-                                4. Acceder al archivo PHP a través de un navegador web para ver su ejecución
-                             </p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
+                        <p id="Respuestas">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Respuestas</h1>
+                            <p class="fs-6 mb-4">1. PHP, que originalmente significaba "Personal Home Page" y ahora se conoce como "Hypertext Preprocessor", es un lenguaje de scripting de propósito general utilizado principalmente para el desarrollo web del lado del servidor. Fue creado por Rasmus Lerdorf en 1994 y ha evolucionado para convertirse en una herramienta clave en la creación de sitios web dinámicos e interactivos.</p>
+                            <p class="fs-6 mb-4">2. El lenguaje PHP se utiliza principalmente para el desarrollo de aplicaciones web del lado del servidor, permitiendo la creación de páginas dinámicas que interactúan con bases de datos para almacenar y recuperar información, procesar datos de formularios, y acceder a servicios externos como APIs. Es ideal para construir sistemas complejos como CMS, sistemas de comercio electrónico y aplicaciones web interactivas, gracias a su capacidad para manejar sesiones de usuario, autenticación, generación de contenido dinámico y creación de APIs. PHP también facilita la integración con diversas tecnologías web, lo que lo convierte en una herramienta versátil y poderosa en el desarrollo de aplicaciones web modernas y seguras.</p>
+                            <p class="fs-6 mb-4">3. La diferencia clave entre los archivos HTML y PHP radica en su funcionalidad y cómo se procesan en el servidor web. HTML es un lenguaje de marcado estático utilizado para definir la estructura y el contenido básico de las páginas web mediante etiquetas como <html>, <head>, <body>, etc. En contraste, PHP es un lenguaje de programación dinámico utilizado para el desarrollo web del lado del servidor, permitiendo la inclusión de código PHP dentro de documentos HTML para generar contenido dinámico, interactuar con bases de datos, procesar formularios y realizar otras tareas avanzadas. Mientras HTML define la presentación estática de una página, PHP añade funcionalidades que permiten a las páginas web responder de manera dinámica a la interacción del usuario y a las condiciones del servidor.</p>
+                            <p class="fs-6 mb-4">4. La etiqueta `<?php ?>` se utiliza para indicar al servidor que el código contenido dentro de estas etiquetas es código PHP que debe ser interpretado y ejecutado. Todo el código PHP debe estar encapsulado dentro de estas etiquetas.</p>
+                            <p class="fs-6 mb-4">5. Para ejecutar archivos PHP en un servidor web, se necesitan algunos requisitos básicos: un servidor web como Apache o Nginx, PHP instalado en el servidor y acceso al servidor para cargar archivos usando métodos como FTP, SFTP o SSH. Los pasos implican primero crear un archivo PHP con el código deseado, luego subir este archivo al servidor web, típicamente al directorio public_html o equivalente. Es crucial asegurarse de que el servidor web esté configurado correctamente para procesar archivos PHP. Una vez cargado, se puede acceder al archivo PHP a través de un navegador web para ver cómo se ejecuta y muestra el contenido dinámico generado por el código PHP.</p>
+                            <p class="fs-6 mb-4">6. <!-- <?php
+                                if(isset($_GET['DATO'])){
+                                  $DATO_var=$_GET['DATO'];
+                                $TEXTO=$DATO_var."\r\n";
+                                file_put_contents("datos.txt", $TEXTO);
+                                } 
+                                ?>
+                                
+                                <!DOCTYPE html>
+                                <html>
+                                  <head>
+                                    <title>Mi primer página web</title>
+                                  </head>
+                                  <body>
+                                    <h1>Hello, World!</h1>
+                                    <?php
+                                    echo "<p>Hola</p>"
+                                ?>
+                                  </body>
+                                </html></p>-->
                             <p class="fs-6 mb-4"></p>
                             <p class="fs-6 mb-4"></p>
                             <p class="fs-6 mb-4"></p>
