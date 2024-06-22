@@ -128,37 +128,25 @@
                             <p class="fs-6 mb-4">3. La diferencia clave entre los archivos HTML y PHP radica en su funcionalidad y cómo se procesan en el servidor web. HTML es un lenguaje de marcado estático utilizado para definir la estructura y el contenido básico de las páginas web mediante etiquetas como <html>, <head>, <body>, etc. En contraste, PHP es un lenguaje de programación dinámico utilizado para el desarrollo web del lado del servidor, permitiendo la inclusión de código PHP dentro de documentos HTML para generar contenido dinámico, interactuar con bases de datos, procesar formularios y realizar otras tareas avanzadas. Mientras HTML define la presentación estática de una página, PHP añade funcionalidades que permiten a las páginas web responder de manera dinámica a la interacción del usuario y a las condiciones del servidor.</p>
                             <p class="fs-6 mb-4">4. La etiqueta `<?php ?>` se utiliza para indicar al servidor que el código contenido dentro de estas etiquetas es código PHP que debe ser interpretado y ejecutado. Todo el código PHP debe estar encapsulado dentro de estas etiquetas.</p>
                             <p class="fs-6 mb-4">5. Para ejecutar archivos PHP en un servidor web, se necesitan algunos requisitos básicos: un servidor web como Apache o Nginx, PHP instalado en el servidor y acceso al servidor para cargar archivos usando métodos como FTP, SFTP o SSH. Los pasos implican primero crear un archivo PHP con el código deseado, luego subir este archivo al servidor web, típicamente al directorio public_html o equivalente. Es crucial asegurarse de que el servidor web esté configurado correctamente para procesar archivos PHP. Una vez cargado, se puede acceder al archivo PHP a través de un navegador web para ver cómo se ejecuta y muestra el contenido dinámico generado por el código PHP.</p>
-                            <p class="fs-6 mb-4">6. <?php
-                                if(isset($_GET['DATO'])){
-                                  $DATO_var=$_GET['DATO'];
-                                $TEXTO=$DATO_var."\r\n";
-                                file_put_contents("datos.txt", $TEXTO);
-                                } 
-                                ?>
-                                <!DOCTYPE html>
-                                <html>
-                                  <head>
-                                    <title>Mi primer página web</title>
-                                  </head>
-                                  <body>
-                                    <h1>Hello, World!</h1>
-                                    <?php
-                                    echo "<p>Hola</p>"
-                                ?>
-                                  </body>
-                                </html></p>
+                            <p class="fs-6 mb-4">6.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo.jpg" alt="..." /></figure>
                             <p class="fs-6 mb-4">7. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/inv.jpg" alt="..." /></figure>
-                            
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
-                            <p class="fs-6 mb-4"></p>
+                            <p class="fs-6 mb-4">8. La función `echo` se utiliza para imprimir texto, variables u otro tipo de contenido en la salida del navegador web. Es una de las funciones más comunes para mostrar resultados en una página web. </p>
+                            <p class="fs-6 mb-4">9. La sintaxis básica de PHP comprende diversas características fundamentales: utiliza etiquetas para delimitar el código PHP (<?php ... ?>); permite comentarios con // para una línea o /* ... */ para múltiples líneas; utiliza el símbolo $ para declarar variables, como en $variable; y define funciones con la palabra clave function, seguida del nombre de la función y su cuerpo encerrado en llaves, por ejemplo, function nombre_funcion() { ... }.</p>
+                            <p class="fs-6 mb-4">10. En PHP, las palabras reservadas como if, else, while y function no distinguen entre mayúsculas y minúsculas, lo que significa que se pueden escribir de cualquier manera (por ejemplo, IF, Else, WHILE). Sin embargo, las variables sí son sensibles a mayúsculas y minúsculas; por ejemplo, $Variable y $variable son consideradas diferentes. Del mismo modo, las constantes en PHP también son sensibles a mayúsculas y minúsculas, por lo que CONSTANTE y constante se considerarían distintas. Esta distinción es importante al nombrar variables y constantes en PHP para evitar errores de referencia y asignación.</p>
+                            <p class="fs-6 mb-4">11. Las variables en PHP se declaran utilizando el símbolo `$` seguido del nombre de la variable: $variable = "valor";</p>
+                            <p class="fs-6 mb-4">12. Las funciones en PHP se declaran utilizando la palabra clave `function`: function nombre_funcion().</p>
+                            <p class="fs-6 mb-4">13. Las funciones se llaman utilizando su nombre seguido de paréntesis: nombre_funcion(); </p>
+                            <p class="fs-6 mb-4">14. PHP soporta varios tipos de ciclos: `for`, `while`, `do-while`, `foreach`.</p>
+                            <p class="fs-6 mb-4">15. PHP soporta varias estructuras condicionales: `if`,`else`,`elseif`,`switch`. </p>
+                            <p class="fs-6 mb-4">16. Los métodos comunes para el manejo de archivos en PHP incluyen: 
+                                - `fopen()`: Abrir un archivo. 
+                                - `fread()`: Leer de un archivo. 
+                                - `fwrite()`: Escribir en un archivo. 
+                                - `fclose()`: Cerrar un archivo. 
+                                - `file_get_contents()`: Leer todo el contenido de un archivo en una cadena. 
+                                - `file_put_contents()`: Escribir una cadena en un archivo. </p>
                             <p class="fs-6 mb-4"></p>
                             <p class="fs-6 mb-4"></p>
                             <p class="fs-6 mb-4"></p>
