@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+  </head>
+
+  <body>
+      <h1>Página 2</h1>
+      <h2>holaaa una foto de mi perrita </h2>
+
+     <img src="20230730_113932.jpg" width=100%>
+    <br>
+    <a href="index.html">Ir a INDEX</a  
+</body>
+
+</html>

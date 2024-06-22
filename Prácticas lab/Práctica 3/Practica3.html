@@ -52,7 +52,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 3 | Creación de una página web usando replit y github.</h1>
 
                         <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
@@ -78,8 +78,9 @@
 
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Replit</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Github</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >HTML</a>
 
                     </header>
                 </div>
@@ -91,53 +92,50 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">Este proyecto aborda la creación de una página web utilizando dos herramientas esenciales: Replit y GitHub para proporcionar una comprensión integral del flujo de trabajo, optimizando el proceso de creación y despliegue de páginas web, así como para brindar habilidades clave en el desarrollo y la gestión de proyectos web.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
+                        <p class="fs-6 mb-4">En la era digital actual, la creación de páginas web es una habilidad esencial tanto para profesionales como para aficionados. Existen diversas herramientas que facilitan este proceso, y dos de las más populares son Replit y GitHub.</p>
+                        <p class="fs-6 mb-4">Replit es una plataforma en línea que permite escribir y ejecutar código en diversos lenguajes de programación directamente desde el navegador. Su interfaz intuitiva y sus características colaborativas la hacen ideal tanto para principiantes como para desarrolladores experimentados. Con Replit, se puede iniciar rápidamente un nuevo proyecto web, probar diferentes conceptos y compartir el progreso con otros en tiempo real. Una vez que se ha desarrollado la página web en Replit, el siguiente paso es gestionarla y desplegarla. Aquí es donde entra en juego GitHub.</p>
+                        <p class="fs-6 mb-4">GitHub es una plataforma de alojamiento de código que utiliza Git para el control de versiones. Ofrece un entorno robusto para la colaboración en proyectos, permitiendo a los desarrolladores trabajar en conjunto desde diferentes ubicaciones. Con GitHub, no solo podemos almacenar y versionar nuestro código, sino también desplegarlo mediante GitHub Pages, facilitando el acceso público a nuestra página web.</p>
                         
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).</p>
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Realizar un recorrido detallado sobre cómo crear una página web desde cero utilizando Replit, posteriormente gestionar y desplegar esta página utilizando GitHub. Se abordará cada paso del proceso, desde la configuración inicial del entorno de desarrollo en Replit, hasta la configuración de un repositorio en GitHub y la publicación de la página web con GitHub Pages.</p>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">Al principio de esta práctica, se comenzó por familiarizarnos con la página de replit. En donde se creó un código sencillo que sería el index principal de nuestra página web.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Códigop1.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Así mismo, se realizó un segundo código llamado "Página 2". Este nos sería de mucha ayuda para vincular el index con esta página y así poder navegar entre ambas páginas una vez estuvieran listas.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Códigop2.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Finalmente se corrieron ambos códigos y el resultado se logró visualizar con ayuda de la ventana emergente de Replit, como se muestra a continuación.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/replitfinal.jpg" alt="..." /></figure>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="video/INDEXH~1.MP4" type="video/mp4">
+                        </video></p></figure>
+
+                        <p class="fs-6 mb-4">Una vez creada nuestra página web en Replit, se creó un repositorio en Github.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Github.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Así mismo, se vinculó la página de replit en Github, logrando así la creación de un nuevo url pero de Github, en donde se apreciaría mejor los resultados de la creación de la página. Para ello, se presenta una imagen de la pestaña "Actions" la cuál nos serviría para observar todos los cambios realizados en el nuevo url.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/githubactions.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Finalmente se accedió al nuevo link, y se pudo observar la exitosa vinculación de github a partir de Replit, así como la navegación entre ambas páginas.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/replitfinal.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/MaryTereFuguemann_Labredesv24 y 2 páginas más - Personal_ Microsoft​ Edge 2024-06-22 11-00-02.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se demostró con éxito la capacidad de los microcontroladores Arduino para generar y contar pulsos de manera precisa y eficiente. La implementación de la función de generación de pulsos permitió controlar la cantidad y frecuencia de los mismos, mientras que la función de conteo validó la recepción y el registro correcto de estos pulsos. La conexión de ambos Arduinos y las pruebas realizadas a diversas frecuencias evidenciaron la capacidad del sistema para manejar diferentes velocidades de pulso, confirmando la robustez y precisión del diseño.</p>
-                        <p class="fs-6 mb-4">Adicionalmente, el uso de Tinkercad como herramienta de simulación facilitó el desarrollo y prueba del sistema sin necesidad de hardware físico, permitiendo visualizar y ajustar el comportamiento de los pulsos en un entorno virtual. Esta práctica resalta la versatilidad de los Arduinos en aplicaciones de sincronización y comunicación, y proporciona una base sólida para desarrollos futuros en sistemas de control y monitoreo, aprovechando tanto simulaciones como implementaciones físicas.</p>
+                        <p class="fs-6 mb-4">la creación de una página web utilizando Replit y GitHub es un proceso que combina la simplicidad del desarrollo en línea con la robustez del control de versiones y la colaboración remota. Replit facilita el inicio y la edición del código en un entorno accesible y amigable, permitiendo a los desarrolladores centrarse en la creatividad y funcionalidad de su proyecto web. Una vez que la página está desarrollada, GitHub se convierte en la herramienta ideal para gestionar y desplegar el proyecto. Con GitHub, no solo se asegura la integridad y la historia del código a través del control de versiones, sino que también se facilita la colaboración con otros desarrolladores y la publicación de la página web mediante GitHub Pages. Este flujo de trabajo, desde el desarrollo inicial en Replit hasta el despliegue final en GitHub, no solo optimiza el proceso de creación de páginas web, sino que también proporciona una experiencia de aprendizaje valiosa y completa. Al dominar estas herramientas, se adquiere una habilidad fundamental en el mundo de la tecnología, preparada para enfrentar desafíos más complejos en el desarrollo web.</p>
                         
-
-                        <p id="referencias">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
-                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
-                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino 1.txt">Arduino 1</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino 2.txt">Arduino 2</a> </p>
+                        <p class="fs-6 mb-4">Descargar Index: <a href="files/index.txt">Index.html</a> </p>
+                        <p class="fs-6 mb-4">Descargar Página 2: <a href="files/pagina2.txt">Página2.html</a> </p>
                         
 
                 </div>

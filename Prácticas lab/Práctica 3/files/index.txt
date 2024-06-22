@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+  </head>
+
+  <body>
+      <h1>Mi primera página web :)</h1>
+      <h2>Mary Tere Füguemann Sardá</h2>
+     
+     <img src="04207cef-c819-43a1-893d-07a9413a27e8.jpeg" width=100%>
+    <br>
+    <a href="página2.html">Ir a Página 2</a  
+</body>
+
+</html>
