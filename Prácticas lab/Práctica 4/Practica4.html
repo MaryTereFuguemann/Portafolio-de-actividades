@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 1</title>
+        <title>Práctica 4</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -52,9 +52,8 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
-
-                        <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
+                        <h1 class="fw-bolder mb-1">Práctica 4 | Creación de una página web con html.</h1>
+                      
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
                             <div class="ms-2">
                                 <div class="fw-bold">Mary Tere Füguemann Sardá</div>
@@ -78,8 +77,9 @@
 
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Github</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Html</a>
 
                     </header>
                 </div>
@@ -91,42 +91,33 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">En esta práctica, se realizó el diseño de una página web con ayuda de github, en donde con ayuda de distintos comandos se intentó copiar el diseño de la página de Intrauia.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
-                        
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
+                        <p class="fs-6 mb-4">En la actualidad, la creación de páginas web es fundamental para cualquier negocio o proyecto personal. HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para construir estructuras y contenidos en la web. Con la ayuda de herramientas poderosas como Visual Studio y GitHub, el proceso de desarrollo web se simplifica considerablemente y se vuelve más colaborativo.</p>
+                        <p class="fs-6 mb-4">Visual Studio, conocido por su robustez y funcionalidad, ofrece un entorno integrado que facilita la escritura de código HTML y otros lenguajes web como CSS y JavaScript. Con su soporte para completado automático, depuración y extensiones, los desarrolladores pueden crear páginas web modernas de manera eficiente y con menos errores.</p>
+                        <p class="fs-6 mb-4">GitHub, por otro lado, juega un papel crucial en el flujo de trabajo colaborativo y la gestión de versiones. Como plataforma de alojamiento de código basada en Git, permite a los equipos de desarrollo trabajar juntos en proyectos web, realizar seguimiento de cambios y coordinar las actualizaciones de manera ordenada. Esto es especialmente útil para mantener la coherencia y la integridad del código a medida que evoluciona el proyecto.</p>
+                        <p class="fs-6 mb-4">En conjunto, HTML junto con Visual Studio y GitHub forman un trío poderoso para la creación y gestión de páginas web modernas. Este enfoque no solo facilita el desarrollo individual, sino que también fomenta la colaboración efectiva entre desarrolladores, mejorando la calidad y la eficiencia en la creación de experiencias web dinámicas y atractivas.</p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).</p>
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Crear una página web con el diseño de una de las páginas de la Universidad Iberoamericana de Puebla, como por ejemplo: IntraUIA, moodle, etc.</p>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">La página seleccionada fue Intrauia, por lo que a continuación se muestran evidencias de la programación y la página.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/WhatsApp Image 2024-06-10 at 9.45.20 PM (1).jpeg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/WhatsApp Image 2024-06-10 at 9.45.20 PM (2).jpeg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/WhatsApp Image 2024-06-10 at 9.45.20 PM.jpeg" alt="..." /></figure>
+                        
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="video/WhatsApp Video 2024-06-11 at 12.46.00 PM.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se demostró con éxito la capacidad de los microcontroladores Arduino para generar y contar pulsos de manera precisa y eficiente. La implementación de la función de generación de pulsos permitió controlar la cantidad y frecuencia de los mismos, mientras que la función de conteo validó la recepción y el registro correcto de estos pulsos. La conexión de ambos Arduinos y las pruebas realizadas a diversas frecuencias evidenciaron la capacidad del sistema para manejar diferentes velocidades de pulso, confirmando la robustez y precisión del diseño.</p>
-                        <p class="fs-6 mb-4">Adicionalmente, el uso de Tinkercad como herramienta de simulación facilitó el desarrollo y prueba del sistema sin necesidad de hardware físico, permitiendo visualizar y ajustar el comportamiento de los pulsos en un entorno virtual. Esta práctica resalta la versatilidad de los Arduinos en aplicaciones de sincronización y comunicación, y proporciona una base sólida para desarrollos futuros en sistemas de control y monitoreo, aprovechando tanto simulaciones como implementaciones físicas.</p>
-                        
+                        <p class="fs-6 mb-4">Con Visual Studio proporcionando un entorno robusto para la programación y GitHub facilitando la gestión de versiones y el trabajo colaborativo, los desarrolladores pueden concentrarse más en la innovación y menos en las complejidades técnicas. Así, HTML junto con estas herramientas modernas no solo hacen posible la creación de páginas web atractivas y funcionales, sino que también impulsan la productividad y la calidad en el desarrollo web contemporáneo.</p>
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
@@ -135,9 +126,8 @@
                         <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
                         
                         <p id="descargables">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino 1.txt">Arduino 1</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino 2.txt">Arduino 2</a> </p>
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                            <p class="fs-6 mb-4">Para este ejercicio, no hay descargables.</p>
                         
 
                 </div>
