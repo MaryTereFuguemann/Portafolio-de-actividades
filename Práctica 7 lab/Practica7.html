@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 1</title>
+        <title>Práctica 7</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -52,7 +52,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 7 | Envío PHP</h1>
 
                         <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
@@ -76,10 +76,11 @@
                         <!--Aqui termina etiqueta de alumno-->
 
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo, 2024</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Junio, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >ESP8266</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >PHP</a>
 
                     </header>
                 </div>
@@ -91,41 +92,55 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">En esta práctica, se conocerá, identificará y comprobará el funcionamiento de una página web con programación PHP, Servidor Local, un servidor en la nube y envió de datos con el módulo ESP8266. </p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
+                        <p class="fs-6 mb-4">Esta práctica aborda el desarrollo y despliegue de una página web dinámica utilizando PHP y tecnologías como XAMPP para crear un entorno local de desarrollo. A partir de ahí, se explora la conexión y modificación de datos tanto desde una red local utilizando direcciones IP como desde un entorno en la nube, garantizando así la funcionalidad y accesibilidad de la página web en diferentes contextos de implementación.</p>
+                        <p class="fs-6 mb-4">El objetivo principal es aprender a manejar y actualizar datos de forma dinámica en una página web utilizando PHP, abarcando desde el entorno local hasta un entorno en la nube, y explorando incluso la integración con dispositivos IoT como NodeMCU para la actualización remota de datos. Este proceso proporciona una experiencia integral en el desarrollo web y en la gestión de datos dinámicos a través de diferentes plataformas y tecnologías.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
-                        
+                        <p class="fs-6 mb-4"> ESP8266
+                            
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).</p>
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
-
+                        <p class="fs-6 mb-4">1. Utilizando bloc de notas desarrollar una página web con código PHP que permita actualizar el valor de un sensor. Recuerda guardar el archivo como “index.php”.</p>
+                        <p class="fs-6 mb-4">2. Utilizando XAMPP, coloca la pagina web en el servidor local y visualízala en el explorador, corrobora el correcto funcionamiento para actualizar los valores de la página.</p>
+                        <p class="fs-6 mb-4">3.	Utilizando otra computadora y una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente URL con la IP correcta: 192.168.0.X/?A=1&B=3 </p>
+                        <p class="fs-6 mb-4">4. Utilizando un servidor en la nube, sube tu página Web de PHP, visualízala en el explorador con la dirección Web y corrobora su funcionamiento directo desde el explorador.</p>
+                        <p class="fs-6 mb-4">5. Utilizando el NodeMCU y el ejemplo de GET, realiza una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente petición (Request) con la IP correcta: 192.168.0.X/?A=1&B=3</p>
+                        <p class="fs-6 mb-4">6. Utilizando un servidor en la nube, sube tu página Web de PHP, utilizando el NodeMCU y el ejemplo de GET, realiza una conexión a la dirección Web y corrobora el funcionamiento del sistema directo desde el explorador.</p>
+                        
+                        
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">A continuación, se muestra la creación de una página web con código PHP.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/código.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/bn.jpg" alt="..." /></figure>
+
+                        <p class="fs-6 mb-4">Página web colocada en XAMPP y visualizada en el explorador.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/xaamp.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ab.jpg" alt="..." /></figure>
+
+                        <p class="fs-6 mb-4">Se empleó una computadora de la universidad para completar el punto número 3, como se muestra a continuación. A sí mismo, se corroboró su visualización en el explorador.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/p3.jpg" alt="..." /></figure>
+
+                        <p class="fs-6 mb-4">Utilizando un servidor en la nube, se subió nuestra página web de PHP y se visualizó en el explorador con la dirección web..</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/public.jpg" alt="..." /></figure>
+
+                        <p class="fs-6 mb-4">Finalmente, utilizando el NODEMCU se realizó un a conexión con el servidor local mediante su dirección IP. A su vez, en el segundo video se emplea un servidor en la nube para realizar una conexión a la dirección web y corroborar su funcionamiento directo desde el explorador.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="video/video.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/video2.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se demostró con éxito la capacidad de los microcontroladores Arduino para generar y contar pulsos de manera precisa y eficiente. La implementación de la función de generación de pulsos permitió controlar la cantidad y frecuencia de los mismos, mientras que la función de conteo validó la recepción y el registro correcto de estos pulsos. La conexión de ambos Arduinos y las pruebas realizadas a diversas frecuencias evidenciaron la capacidad del sistema para manejar diferentes velocidades de pulso, confirmando la robustez y precisión del diseño.</p>
-                        <p class="fs-6 mb-4">Adicionalmente, el uso de Tinkercad como herramienta de simulación facilitó el desarrollo y prueba del sistema sin necesidad de hardware físico, permitiendo visualizar y ajustar el comportamiento de los pulsos en un entorno virtual. Esta práctica resalta la versatilidad de los Arduinos en aplicaciones de sincronización y comunicación, y proporciona una base sólida para desarrollos futuros en sistemas de control y monitoreo, aprovechando tanto simulaciones como implementaciones físicas.</p>
+                        <p class="fs-6 mb-4">esta práctica permitió adquirir y consolidar varios aprendizajes clave en el desarrollo web y el manejo de tecnologías de red. Primero, se aprendió a desarrollar una página web utilizando PHP para actualizar el valor de un sensor, y a manejar el bloc de notas como herramienta básica de codificación, guardando el archivo adecuadamente como "index.php". Luego, se profundizó en el uso de XAMPP para configurar un servidor local, lo que facilitó la visualización y verificación de la funcionalidad de la página web en un explorador. La práctica también incluyó la experiencia de acceder y modificar la página web desde otra computadora a través de la dirección IP del servidor local, fortaleciendo la comprensión de las redes locales y las direcciones IP.</p>
+                        <p class="fs-6 mb-4">Además, se adquirió la habilidad de subir y gestionar la página web en un servidor en la nube, lo que implicó verificar su funcionamiento desde cualquier lugar con acceso a Internet. El uso del NodeMCU y la realización de conexiones mediante peticiones GET a la dirección IP del servidor local y posteriormente al servidor en la nube, permitió comprender la integración de dispositivos IoT con aplicaciones web, así como la importancia de las solicitudes HTTP en la comunicación entre dispositivos. En conjunto, estos aprendizajes consolidaron competencias esenciales en desarrollo web, administración de servidores, y manejo de redes y dispositivos IoT, preparando así para proyectos más complejos en el ámbito de la tecnología y la informática.</p>
                         
 
                         <p id="referencias">
@@ -135,9 +150,8 @@
                         <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
                         
                         <p id="descargables">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino 1.txt">Arduino 1</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino 2.txt">Arduino 2</a> </p>
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                            <p class="fs-6 mb-4">Para este ejercicio, no hay descargables.</p>
                         
 
                 </div>
