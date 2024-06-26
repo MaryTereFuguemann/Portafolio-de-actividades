@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 1</title>
+        <title>Práctica 5 laboratorio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -23,7 +23,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="../">Inicio</a></li>                    
-                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index.html#practicasdelaboratorio">Prácticas de laboratorio</a></li>
                         </ul>
@@ -52,7 +52,7 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
+                        <h1 class="fw-bolder mb-1">Práctica 5 | Node MCU ESP32 - Sensores Digitales, Analógicos e Inteligentes.</h1>
 
                         <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
@@ -76,7 +76,7 @@
                         <!--Aqui termina etiqueta de alumno-->
 
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo, 2024</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Junio, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
@@ -91,41 +91,57 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">En esta práctica se conocerá, identificará y comprobará el funcionamiento de los sensores digitales, analógicos e inteligentes en el módulo NodeMCU ESP32.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
+                        <p class="fs-6 mb-4">En esta práctica de laboratorio, nos enfocaremos en la configuración y programación de diversos sensores utilizando tanto un entorno de simulación como un dispositivo físico. Inicialmente, configuraremos el entorno de simulación WOKWI para trabajar con tres tipos de sensores: un sensor digital (botón), un sensor analógico (potenciómetro) y un sensor inteligente (DHT11). Posteriormente, desarrollaremos programas de monitoreo para un sensor PIR digital y un sensor analógico "Slide Potentiometer" basándonos en la documentación y ejemplos proporcionados. Además, implementaremos un programa para un nuevo sensor inteligente que utilice una librería externa. Finalmente, configuraremos el IDE de Arduino para programar un NodeMCU ESP32 real, replicando los mismos objetivos alcanzados en el simulador. Esta práctica nos permitirá adquirir habilidades en la configuración de entornos de desarrollo, programación de sensores y utilización de dispositivos físicos para monitoreo y control.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
+                        <p class="fs-6 mb-4"> - Node MCU ESP32
+                        <p class="fs-6 mb-4"> - LED, resistencia de 220 Ohms
+                        <p class="fs-6 mb-4"> - Botón y resistencia de 1Khom
+                        <p class="fs-6 mb-4"> - Sensores: Potenciómetro, DHT22, PIR.
+                        <p class="fs-6 mb-4"> -	Protoboard y cables
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).</p>
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
-                            <p id="simulacion">
+                        <p class="fs-6 mb-4">Utilizando la información e instrucciones de la presentación, configurar el entorno de WOKWI y probar los 3 ejemplos de sensores: Sensor digital (botón), Sensor Analógico (Potenciómetro) y Sensor Inteligente (DHT11).</p>
+                        <p class="fs-6 mb-4">Desarrollar un programa de monitoreo de un sensor digital PIR, basándote en el ejemplo y la documentación del sensor: https://docs.wokwi.com/parts/wokwi-pir-motion-sensor.</p>
+                        <p class="fs-6 mb-4">Desarrollar un programa de monitoreo de un sensor analógico “Slide Potentiometer”, basándote en el ejemplo y la documentación del sensor: https://docs.wokwi.com/parts/wokwi-slide-potentiometer.</p>
+                        <p class="fs-6 mb-4">Desarrollar un programa con un nuevo sensor inteligente que utilice una librería externa.</p>
+                        <p class="fs-6 mb-4">Utilizando la información de la siguiente liga, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias. Realiza los mismos objetivos específicos del simulador, utilizando un NodeMCU ESP32 real. https://randomnerdtutorials.com/getting-started-with-esp32/</p> 
+                        
+                        <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en la página de WOKWI. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los ESP32. Así mismo, se realizó cada uno de los códigos. A continuación se muestra una imagen correspondiente a uno de los circuitos. Así mismo, se muestra en los resultados cada uno de los puntos del desarrollo.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Librería ext.jpeg" alt="..." /></figure>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">Se configuró el entorno de WOKWI y se probaron los 3 ejemplos de sensores: Sensor digital (botón), Sensor Analógico (Potenciómetro) y Sensor Inteligente (DHT11).</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="video/botón.mp4" type="video/mp4">
                         </video></p></figure>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/pot.mp4" type="video/mp4">
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/dht11.jpeg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Programa de monitoreo de un sensor digital PIR.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/PIR.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Programa de monitoreo de un slide potentiometer.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/slidepot.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Desarrollo de un programa con un nuevo sensor inteligente que utilice una librería externa.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Librería ext.jpeg" alt="..." /></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se demostró con éxito la capacidad de los microcontroladores Arduino para generar y contar pulsos de manera precisa y eficiente. La implementación de la función de generación de pulsos permitió controlar la cantidad y frecuencia de los mismos, mientras que la función de conteo validó la recepción y el registro correcto de estos pulsos. La conexión de ambos Arduinos y las pruebas realizadas a diversas frecuencias evidenciaron la capacidad del sistema para manejar diferentes velocidades de pulso, confirmando la robustez y precisión del diseño.</p>
-                        <p class="fs-6 mb-4">Adicionalmente, el uso de Tinkercad como herramienta de simulación facilitó el desarrollo y prueba del sistema sin necesidad de hardware físico, permitiendo visualizar y ajustar el comportamiento de los pulsos en un entorno virtual. Esta práctica resalta la versatilidad de los Arduinos en aplicaciones de sincronización y comunicación, y proporciona una base sólida para desarrollos futuros en sistemas de control y monitoreo, aprovechando tanto simulaciones como implementaciones físicas.</p>
+                        <p class="fs-6 mb-4">En esta práctica de laboratorio, nos enfocaremos en la configuración y programación de diversos sensores utilizando tanto un entorno de simulación como un dispositivo físico. Inicialmente, configuraremos el entorno de simulación WOKWI para trabajar con tres tipos de sensores: un sensor digital (botón), un sensor analógico (potenciómetro) y un sensor inteligente (DHT11).</p>
+                        <p class="fs-6 mb-4">Posteriormente, desarrollaremos programas de monitoreo para un sensor PIR digital y un sensor analógico "Slide Potentiometer" basándonos en la documentación y ejemplos proporcionados. Además, implementaremos un programa para un nuevo sensor inteligente que utilice una librería externa. Finalmente, configuraremos el IDE de Arduino para programar un NodeMCU ESP32 real, replicando los mismos objetivos alcanzados en el simulador. Esta práctica nos permitirá adquirir habilidades en la configuración de entornos de desarrollo, programación de sensores y utilización de dispositivos físicos para monitoreo y control.</p>
                         
 
                         <p id="referencias">
@@ -135,9 +151,8 @@
                         <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
                         
                         <p id="descargables">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar código Arduino 1: <a href="files/Arduino 1.txt">Arduino 1</a> </p>
-                        <p class="fs-6 mb-4">Descargar código Arduino 2: <a href="files/Arduino 2.txt">Arduino 2</a> </p>
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                            <p class="fs-6 mb-4">Para este ejercicio, no hay descargables.</p>
                         
 
                 </div>
