@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Práctica 1</title>
+        <title>Práctica 6 lab</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -23,7 +23,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="../">Inicio</a></li>                    
-                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index.html#practicasdelaboratorio">Prácticas de laboratorio</a></li>
                         </ul>
@@ -52,9 +52,8 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Protocolo de comunicación | Contador de pulsos</h1>
-
-                        <!-- ETIQUETAS DE ALUMNOS (Hacer una por cada alumno)-->                       
+                        <h1 class="fw-bolder mb-1">Práctica 6 | Node MCU ESP32 - Thingspeak</h1>
+                      
                         <!-- ETIQUETA DE Mary Tere (Hacer una por cada alumno)-->
                             <div class="ms-2">
                                 <div class="fw-bold">Mary Tere Füguemann Sardá</div>
@@ -69,10 +68,10 @@
                         <!--Aqui termina etiqueta de alumno-->
 
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mayo, 2024</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Junio, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >ESP32</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Thinkspeak</a>
 
                     </header>
                 </div>
@@ -84,36 +83,54 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se implementaron dos funciones utilizando dos Arduinos. La primera función en el primer Arduino genera una serie de pulsos a una frecuencia específica. La segunda función en el segundo Arduino cuenta los pulsos recibidos y los muestra en el monitor serial. Al conectar un pin de salida del primer Arduino a un pin de entrada del segundo, se realizaron pruebas con frecuencias de 1, 10, 100 y 1000 pulsos por segundo. Los resultados confirmaron el correcto funcionamiento del sistema en todas las frecuencias especificadas.</p>
+                        <p class="fs-6 mb-4">En esta práctica, se conocerá, identificará y comprobará el funcionamiento de la plataforma Thingspeak con el módulo NodeMCU ESP32.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, exploraremos el uso de dos microcontroladores Arduino para la generación y conteo de pulsos eléctricos. La transmisión y recepción de pulsos son fundamentales en diversas aplicaciones de electrónica y sistemas de comunicación, permitiendo la sincronización y transmisión de datos entre dispositivos. La práctica se divide en dos partes principales. En la primera parte, utilizaremos un Arduino para generar un número específico de pulsos a una frecuencia determinada. Esta capacidad de generar pulsos controlados es esencial para aplicaciones que requieren temporización precisa y sincronización. En la segunda parte, otro Arduino contará los pulsos recibidos y mostrará la cuenta en el monitor serial. Esta habilidad de contar pulsos es crucial para la medición y monitoreo en sistemas de control y comunicación. Finalmente, integraremos ambos sistemas conectando un pin de salida del primer Arduino (generador de pulsos) a un pin de entrada del segundo Arduino (contador de pulsos). Realizaremos pruebas a diferentes frecuencias de pulso, incluyendo 1, 10, 100 y 1000 pulsos por segundo, para verificar el correcto funcionamiento del sistema.</p>
-                        
+                        <p class="fs-6 mb-4">ThinkSpeak es una plataforma de análisis y visualización de datos que permite recopilar, almacenar y analizar datos de sensores conectados a Internet de las Cosas (IoT). Ofrece capacidades de procesamiento en tiempo real, lo que permite a los usuarios crear visualizaciones de datos en forma de gráficos y tablas, establecer alertas y desencadenar acciones basadas en eventos específicos. ThinkSpeak es compatible con múltiples lenguajes de programación, incluyendo MATLAB, lo que facilita la realización de análisis avanzados y el desarrollo de aplicaciones IoT personalizadas. La plataforma también permite la integración con otras herramientas y servicios en la nube, ofreciendo una solución completa para el monitoreo y la gestión de dispositivos IoT.</p>                       
+
                         <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> -2 arduinos
-                        <p class="fs-6 mb-4"> -Protoboard
-                        <p class="fs-6 mb-4"> -Botones
-                        <p class="fs-6 mb-4"> -Leds
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                            <p class="fs-6 mb-4"> - Node MCU ESP32
+                            <p class="fs-6 mb-4"> - LED, resistencia de 220 Ohms
+                            <p class="fs-6 mb-4"> - Botón y resistencia de 1Khom
+                            <p class="fs-6 mb-4"> - Sensores: Potenciómetro, DHT22, PIR.
+                            <p class="fs-6 mb-4"> -	Protoboard y cables
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Utilizando 1 Arduino, diseñar una función que permita enviar un número determinado de pulsos (Variación de 0 a 1) a una frecuencia específica, la función debe tener la siguiente estructura void pulsos(int cantidad, int duración). (Comprobar el correcto funcionamiento utilizando el osciloscopio).</p>
-                        <p class="fs-6 mb-4">Utilizando un segundo Arduino, diseñar una función que permita contar el número de pulsos que ha recibido (Variación de 0 a 1) y mostrarlos en el monitor serial.</p>
-                        <p class="fs-6 mb-4">Utilizando ambos arduinos, conectar un pin de los Arduinos para comprobar el funcionamiento del sistema enviando un numero de pulsos específicos a la velocidad de 1 pulso por segundo,10, 100 y 1000 pulsos por segundo.</p>
-                            <p id="simulacion">
+                        <p class="fs-6 mb-4">1. Utilizando la información e instrucciones de la presentación, configurar el entorno de WOKWI y ThingSpeak para probar los 3 ejemplos de sensores: Sensor digital (botón), Sensor Analógico (Potenciómetro) y Sensor Inteligente (DHT11).</p>
+                        <p class="fs-6 mb-4">2. Utilizando el programa desarrollado en la actividad 2 del sensor digital PIR, crea un nuevo tablero público de monitoreo de Thingspeak, modifica el programa y conéctalo para que pueda ser monitoreado su valor en tiempo real.</p>
+                        <p class="fs-6 mb-4">3. Utilizando el programa desarrollado en la actividad 2 del sensor analógico “Slide Potentiometer”, crea un nuevo tablero público de monitoreo de Thingspeak, modifica el programa y conéctalo para que pueda ser monitoreado su valor en tiempo real</p>
+                        <p class="fs-6 mb-4">4. Desarrollar un nuevo ejemplo de sor inteligente que envie información a Thingspeak, pueden elegir el sensor que quieran mientras utilice una librería extra.</p>
+                        <p class="fs-6 mb-4">5. Utilizando la información de la siguiente liga, configurar el IDE de Arduino para poder programar el NodeMCU directamente desde el entorno de Arduino, instalando las herramientas necesarias. Realiza los mismos objetivos específicos del simulador, utilizando un NodeMCU ESP32 real.https://randomnerdtutorials.com/getting-started-with-esp32/</p>
+                        
+                        <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se realizó la simulación correspondiente en el programa Tinkercad. Para ello se coloracon los materiales correspondientes y se realizó el programa de cada uno de los arduinos. Finalmente, se conectó un led para que pudieramos apreciar el resultado tanto en el circuito como en el monitor serial.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/P1.jpg" alt="..." /></figure>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/monitor en serie.jpg" alt="..." /></figure>
-
+                            <p class="fs-6 mb-4">Una vez teniendo las simulaciones previamente hechas en la práctica 5 en la página de WOKWI. El primer paso fue crear una cuenta en Thinkspeak e identificar el url y el api key que se agregaría en cada código, por lo tanto, se les añadieron las líneas de código que serían las correspondientes de enviar toda la información a Thinkspeak.
+                            
+                            
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pircod.png" alt="..." /></figure>
+                            
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">A continuación, se presenta un video en el cual se aplicaron 10 pulsos por segundo</p>
+                        <p class="fs-6 mb-4">A continuación, se adjuntan las imágenes de la simulación del botón.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/botoncod.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Así mismo, se presentan las fotos correspondientes a las gráficas de Thinkspeak de su funcionamiento.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/think1boton.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/thinkbot.jpg" alt="..." /></figure>
+
+                        <p class="fs-6 mb-4">A continuación, se adjuntan las imágenes de la simulación del potenciómetro.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/potcod.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Así mismo, se presentan una foto correspondientes a la gráfica de Thinkspeak de su funcionamiento.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/thinkpot.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">A continuación se presenta un video del funcionamiento del potenciómetro.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/10 pulsos.mp4" type="video/mp4">
+                            <source src="video/pot.mp4" type="video/mp4">
                         </video></p></figure>
+                        
+                    
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
@@ -123,9 +140,9 @@
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
-                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
-                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        <p class="fs-6 mb-4">Sitio web de ThingSpeak: https://thingspeak.com/</p>
+                        <p class="fs-6 mb-4">ThingSpeak. (n.d.). About ThingSpeak. Retrieved from https://thingspeak.com/</p>
+                        <p class="fs-6 mb-4">MathWorks. (n.d.). ThingSpeak: IoT data analytics platform. Retrieved from https://www.mathworks.com/products/thingspeak.html</p>
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
