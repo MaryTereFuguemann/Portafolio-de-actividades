@@ -23,7 +23,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link" href="../">Inicio</a></li>                    
-                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
                             <li class="nav-item"><a class="nav-link" href="../index.html#practicasdelaboratorio">Prácticas de laboratorio</a></li>
                         </ul>
@@ -68,19 +68,11 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <!-- ETIQUETA DE Marco (Hacer una por cada alumno)-->
-                        <div class="ms-2">
-                            <div class="fw-bold">Marco Alejandro Solorzano</div>
-                            <div class="text-muted">Ingeniería Mecatrónica</div>
-                        </div>
-                        <!--Aqui termina etiqueta de alumno-->
-
-
                         <div class="text-muted fst-italic mt-2 mb-2">Fecha: Junio, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >ESP8266</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Programación</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >PHP</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Cables de red</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >IP</a>
+
 
                     </header>
                 </div>
@@ -92,26 +84,26 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, se conocerá, identificará y comprobará el funcionamiento de una página web con programación PHP, Servidor Local, un servidor en la nube y envió de datos con el módulo ESP8266. </p>
+                        <p class="fs-6 mb-4">En esta práctica, se conocerá, identificará y comprobará el funcionamiento de una red de área local utilizando switches y Router.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Esta práctica aborda el desarrollo y despliegue de una página web dinámica utilizando PHP y tecnologías como XAMPP para crear un entorno local de desarrollo. A partir de ahí, se explora la conexión y modificación de datos tanto desde una red local utilizando direcciones IP como desde un entorno en la nube, garantizando así la funcionalidad y accesibilidad de la página web en diferentes contextos de implementación.</p>
-                        <p class="fs-6 mb-4">El objetivo principal es aprender a manejar y actualizar datos de forma dinámica en una página web utilizando PHP, abarcando desde el entorno local hasta un entorno en la nube, y explorando incluso la integración con dispositivos IoT como NodeMCU para la actualización remota de datos. Este proceso proporciona una experiencia integral en el desarrollo web y en la gestión de datos dinámicos a través de diferentes plataformas y tecnologías.</p>
-                        
+                        <p class="fs-6 mb-4">Para identificar y caracterizar el funcionamiento de un switch y un router, es esencial entender que un switch permite la conexión y comunicación entre múltiples dispositivos dentro de una misma red local (LAN), mientras que un router facilita la conexión entre diferentes redes, dirigiendo el tráfico de datos de manera eficiente. Para elaborar una red con asignación automática de IP, se selecciona el tipo de cable adecuado y se utiliza un switch para conectar al menos tres computadoras y una que actúe como servidor. Posteriormente, se comprueba la conectividad utilizando el comando PING y se verifica el acceso a la página web del servidor. De manera similar, se puede configurar una red con asignación automática de IP utilizando un router para conectar al menos tres computadoras, ya sea de manera alámbrica o inalámbrica, y una con servicios de servidor. Nuevamente, se verifica la conectividad con el comando PING y el acceso a la página web del servidor. Finalmente, ambas redes se pueden unir, asegurando la correcta asignación automática de IP y seleccionando el tipo de cable adecuado, para comprobar el intercambio de archivos entre los dispositivos.</p>
+                                                
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> ESP8266
+                        <p class="fs-6 mb-4">- 6 computadoras</p>
+                        <p class="fs-6 mb-4">- 1 switch</p>
+                        <p class="fs-6 mb-4">- 1 router</p>
+                        <p class="fs-6 mb-4">- Cables de red directos y cruzados</p>
                             
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">1. Utilizando bloc de notas desarrollar una página web con código PHP que permita actualizar el valor de un sensor. Recuerda guardar el archivo como “index.php”.</p>
-                        <p class="fs-6 mb-4">2. Utilizando XAMPP, coloca la pagina web en el servidor local y visualízala en el explorador, corrobora el correcto funcionamiento para actualizar los valores de la página.</p>
-                        <p class="fs-6 mb-4">3.	Utilizando otra computadora y una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente URL con la IP correcta: 192.168.0.X/?A=1&B=3 </p>
-                        <p class="fs-6 mb-4">4. Utilizando un servidor en la nube, sube tu página Web de PHP, visualízala en el explorador con la dirección Web y corrobora su funcionamiento directo desde el explorador.</p>
-                        <p class="fs-6 mb-4">5. Utilizando el NodeMCU y el ejemplo de GET, realiza una conexión con el servidor local mediante su dirección IP y modifica los datos de la página Web de PHP utilizando la siguiente petición (Request) con la IP correcta: 192.168.0.X/?A=1&B=3</p>
-                        <p class="fs-6 mb-4">6. Utilizando un servidor en la nube, sube tu página Web de PHP, utilizando el NodeMCU y el ejemplo de GET, realiza una conexión a la dirección Web y corrobora el funcionamiento del sistema directo desde el explorador.</p>
-                        
+                        <p class="fs-6 mb-4">1. Identificar y caracterizar el funcionamiento del switch y el router.</p>
+                        <p class="fs-6 mb-4">2. Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un switch conectando mínimo 3 computadoras y una con servicios de servidor.(Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor)</p>
+                        <p class="fs-6 mb-4">3.	Elaborar una red, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y un router conectando mínimo 3 computadoras (alámbrica o inalámbricamente) y una con servicios de servidor. (Comprueba que es posible encontrar dispositivos en la red, puedes usar el comando PING, y comprueba el acceso a la página web del servidor)</p>
+                        <p class="fs-6 mb-4">4. Une ambas Redes, utilizando la asignación automática de IP, seleccionado el tipo de cable adecuado y comprueba el intercambio de archivos.</p>
+                       
                         
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
