@@ -1,0 +1,63 @@
+#include <DHT.h>
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+int led = 32;
+String url = "https://api.thingspeak.com/update";
+String api_key = "N1U6LLWNC9JMHB95";
+
+DHT dht(33, DHT22);
+
+float valor_temperatura = 0;
+float valor_humedad = 0;
+
+void setup() {
+  pinMode(led, OUTPUT); // Configurar puerto 32 como salida
+  dht.begin(); // Inicializamos DHT
+  Serial.begin(115200);
+
+  // Conectar a la red WiFi
+  WiFi.begin("Wokwi-GUEST", "");
+
+  // Esperar hasta que la conexión WiFi se realice
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("\nWiFi conectado");
+}
+
+void loop() {
+  delay(1000);
+  valor_temperatura = dht.readTemperature();
+  valor_humedad = dht.readHumidity();
+
+  Serial.print("Temperatura: ");
+  Serial.println(valor_temperatura);
+  Serial.print("Humedad: ");
+  Serial.println(valor_humedad);
+
+  // Si la humedad es mayor o igual a 50%, encender el LED
+  if (valor_humedad >= 50) {
+    digitalWrite(led, HIGH);
+  } else {
+    digitalWrite(led, LOW);
+  }
+
+  // Esperar hasta que la conexión WiFi esté disponible
+  if (WiFi.status() == WL_CONNECTED) {
+    // Iniciar conexión y enviar el encabezado HTTP, devolver el código de error
+    HTTPClient http;
+    String message = url + "?api_key=" + api_key + "&field1=" + String(valor_temperatura) + "&field2=" + String(valor_humedad);
+
+    http.begin(message); // HTTP
+
+    int httpCode = http.GET();
+    Serial.println(message);
+    Serial.print("Código de respuesta HTTP: ");
+    Serial.println(httpCode);
+    http.end();
+  }
+
+  delay(3000); // Esperar un breve periodo antes de realizar la siguiente lectura
+}

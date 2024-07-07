@@ -1,0 +1,55 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+// Puertos GPIO
+int boton = 33;
+int led = 32;
+int status_boton = 0;
+
+String api_key = "N1U6LLWNC9JMHB95";
+String url = "https://api.thingspeak.com/update";
+
+void setup() {
+  pinMode(led, OUTPUT);  // Configurar puerto 32 como salida
+  pinMode(boton, INPUT); // Configurar puerto 33 como entrada
+  Serial.begin(115200);  // Inicializar la comunicación serial para monitoreo
+
+  // Conectar a WiFi
+  WiFi.begin("Wokwi-GUEST", "");
+
+  // Esperar hasta que la conexión WiFi se realice
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nWiFi conectado");
+}
+
+void loop() {
+  status_boton = digitalRead(boton); // Leer el estado del botón
+
+  // Controlar el LED basado en el estado del botón
+  if (status_boton == HIGH) {
+    digitalWrite(led, HIGH);
+  } else {
+    digitalWrite(led, LOW);
+  }
+
+  // Esperar hasta que la conexión WiFi esté disponible
+  if (WiFi.status() == WL_CONNECTED) {
+    // Iniciar conexión y enviar el encabezado HTTP, devolver el código de error
+    HTTPClient http;
+    String message = url + "?api_key=" + api_key + "&field1=" + String(status_boton);
+
+    http.begin(message); // HTTP
+
+    int httpCode = http.GET();
+    Serial.println(message);
+    Serial.print("Código de respuesta HTTP: ");
+    Serial.println(httpCode);
+    http.end();
+  }
+
+  delay(3000); // Esperar un breve periodo antes de realizar la siguiente lectura
+}

@@ -1,0 +1,57 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+int pot = 33;       // Pin del potenciómetro deslizante (GPIO 33)
+int led = 32;       // Pin del LED (GPIO 32)
+int valor_analogico = 0; // Variable para almacenar el valor leído del potenciómetro
+
+String api_key = "N1U6LLWNC9JMHB95";
+String url = "https://api.thingspeak.com/update";
+
+void setup() {
+  pinMode(led, OUTPUT);  // Configurar el pin del LED como salida
+  Serial.begin(115200);  // Inicializar la comunicación serial para monitoreo
+
+  // Conectar a WiFi
+  WiFi.begin("Wokwi-GUEST", "");
+
+  // Esperar hasta que la conexión WiFi se realice
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nWiFi conectado");
+}
+
+void loop() {
+  valor_analogico = analogRead(pot); // Leer el valor analógico del potenciómetro
+
+  // Enviar el valor leído por el puerto serial
+  Serial.print("Valor del potenciómetro: ");
+  Serial.println(valor_analogico);
+
+  // Si el valor analógico es mayor o igual a 2048, encender el LED
+  if (valor_analogico >= 2048) {
+    digitalWrite(led, HIGH);
+  } else {
+    digitalWrite(led, LOW);
+  }
+
+  // Esperar hasta que la conexión WiFi esté disponible
+  if (WiFi.status() == WL_CONNECTED) {
+    // Iniciar conexión y enviar el encabezado HTTP, devolver el código de error
+    HTTPClient http;
+    String message = url + "?api_key=" + api_key + "&field1=" + String(valor_analogico);
+
+    http.begin(message); // HTTP
+
+    int httpCode = http.GET();
+    Serial.println(message);
+    Serial.print("Código de respuesta HTTP: ");
+    Serial.println(httpCode);
+    http.end();
+  }
+
+  delay(3000); // Esperar un breve periodo antes de realizar la siguiente lectura
+}
